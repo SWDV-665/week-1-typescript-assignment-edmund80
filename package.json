@@ -1,0 +1,22 @@
+{
+  "name": "swdv-665-adv-topics-software-dvlpmnt-",
+  "version": "1.0.0",
+  "description": "Grocery App",
+  "source": "groceries.html",
+  
+  "scripts": {
+    "start": "parcel --open",
+    "build": "parcel build"
+  },
+  "keywords": [],
+  "author": "Edmund Davis",
+  "license": "ISC",
+  "devDependencies": {
+    "buffer": "^6.0.3",
+    "events": "^3.3.0",
+    "parcel": "^2.10.1",
+    "process": "^0.11.10",
+    "stream-http": "^3.2.0",
+    "url": "^0.11.3"
+  }
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery</title>
+</head>
+<body>
+    <div id="groceryList"></div>
+    <script>class Grocery {
+    constructor(name, quantity, price){
+        this.name = name;
+        this.quantity = quantity;
+        this.price = price;
+    }
+}
+const groceries = [
+    new Grocery("Milk", 3, 3.50),
+    new Grocery("Bread", 6, 2.00),
+    new Grocery("Eggs", 11, 1.50)
+];
+const groceryListElement = document.getElementById("groceryList");
+groceries.forEach((grocery)=>{
+    const divElement = document.createElement("div");
+    const nameElement = document.createElement("p");
+    const quantityElement = document.createElement("p");
+    const priceElement = document.createElement("p");
+    nameElement.textContent = "Name: " + grocery.name;
+    quantityElement.textContent = "Quantity: " + grocery.quantity;
+    priceElement.textContent = "Price: $" + grocery.price.toFixed(2);
+    divElement.appendChild(nameElement);
+    divElement.appendChild(quantityElement);
+    divElement.appendChild(priceElement);
+    groceryListElement.appendChild(divElement);
+});
+
+</script>
+<script src="/groceries.3ad92649.js"></script></body>
+</html>
